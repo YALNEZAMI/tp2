@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest src/ --coverage"
   },
-  "author": "",
+  "author": "Alnezami et Andy",
   "license": "ISC",
   "devDependencies": {
     "@jest/globals": "^29.7.0",
