@@ -1,5 +1,5 @@
 // Une classe métier nommée pokemon. Notez la syntaxe typescript pour créer un objet qui a un attribut id.
-export class Pokemon {
+class Pokemon {
   constructor(private id: string, private nom: string, private sprites: any) {}
 
   setId(id: string) {
@@ -62,7 +62,7 @@ b.addEventListener("click", async () => {
     return;
   }
   const filteredPokemons = pokemons.filter((p) =>
-    p.getNom().includes(filtre.value)
+    p.getNom().toLowerCase().includes(filtre.value.toLowerCase())
   );
   let select = document.getElementById("allpokemons");
   if (select) select.innerHTML = "";
@@ -140,3 +140,5 @@ async function afficheDetail() {
     if (namePoke) namePoke.innerText = name;
   }
 }
+
+export default Pokemon;
