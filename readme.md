@@ -2,7 +2,7 @@ Pour compiler ce projet, naviguez vers la racine de celui-ci et exécutez la com
 npm i
 puis la commande suivante:
 tsc --watch
-puis ouvrez le fichier index.html(du dossier www) dans votre navigateur.
+puis ouvrez le fichier index.html dans votre navigateur.
 
 //rendu du tp2 Partie 1
 La partie concernant les mots de passe à trouver s'est bien passé dans firefox, jusqu'à l'exercice 4, où on a du passer à Chrome pour qu'on puisse changer le code source directemen.
