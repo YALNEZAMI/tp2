@@ -90,6 +90,8 @@ async function getAllPokemons(): Promise<any[]> {
   }
 }
 async function initPokemons() {
+  console.log("init pokemons");
+
   const apiPokemons = await getAllPokemons();
   pokemons = [];
   for (let i = 0; i < apiPokemons.length; i++) {
