@@ -1,4 +1,6 @@
 // Une classe métier nommée pokemon. Notez la syntaxe typescript pour créer un objet qui a un attribut id.
+console.log("hello");
+
 class Pokemon {
   constructor(private id: string, private nom: string, private sprites: any) {}
 
@@ -90,6 +92,8 @@ async function getAllPokemons(): Promise<any[]> {
   }
 }
 async function initPokemons() {
+  console.log("initPokemons");
+
   const apiPokemons = await getAllPokemons();
   pokemons = [];
   for (let i = 0; i < apiPokemons.length; i++) {
@@ -141,4 +145,4 @@ async function afficheDetail() {
   }
 }
 
-export default Pokemon;
+// export  default Pokemon;
